@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post</title>
+<link rel="stylesheet" href="../css/nav.css">
+<link rel="stylesheet" href="../css/postPage.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/be159e1c51.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<nav class="navbar">
+		<div class="navbar-container">
+			<a href="./homePage.html" id="navbar-logo"><i class="fa-solid fa-carrot"></i>KITCHEN TOPICS</a>
+			<div class="navbar-toggle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			<ul class="navbar-menu">
+			    <li class="navbar-item">
+            		<a href="./tipsPage.html" class="navbar-links">Tips</a>
+        		</li>
+				<li class="navbar-item">
+					<a href="./searchPage.html" class="navbar-links">Search</a>
+				</li>
+					<li class="navbar-item">
+					<a href="./discoverPage.html" class="navbar-links">Discover</a>
+				</li>
+					<li class="navbar-item">
+					<a href="./homePage.html" class="navbar-links">Home</a>
+				</li>
+					<li class="navbar-item">
+					<a href="./createPost.html" class="navbar-links">Post</a>
+				</li>
+					<li class="navbar-item">
+					<a href="./profilePage.html" class="navbar-links">Profile</a>
+				</li>
+					<li class="navbar-btn">
+					<a href="../AccountServlet?source=logout" class="button">Logout</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="main">
+		<div class="main-container">
+			<div class="main-content">
+				<h1>Take a closer look at this tasty dish</h1>
+			</div>
+		</div>
+	</div>
+	
+	<div class="main-img" id="main-img">
+	<div class="main-img-container" id="main-img-container">
+	<div class="main-img-card">
+	<a href="#" class="main-profile-img-link" id="main-profile-img-link">
+		<span class="main-profile-img">
+			<img src="" alt="Profile Picture" id="home-user-img" class="home-user-img">
+			<span id="home-username" class="home-username"></span>
+		</span>
+	</a>
+	<div class="recipe-name" id="recipe-name"></div>
+	<img class="home-img" id="home-img" src="" alt="Post image">
+		<div class="home-post-actions">
+			<button class="icon-btn like-btn">
+				<i class="fa-solid fa-thumbs-up"></i>
+				<span class="like-count" id="like-count"></span>
+			</button>
+			<button class="icon-btn dislike-btn">
+				<i class="fa-solid fa-thumbs-down"></i>
+				<span class="dislike-count" id="dislike-count"></span>
+			</button>
+			<button class="icon-btn comment-btn">
+				<i class="fa-solid fa-comment"></i>
+				<span class="comment-count" id="comment-count">1002</span>
+			</button>
+		</div>
+		
+		<p class="h3">Description:</p>
+		<p class="description" id="description"></p>
+		<p class="h3">Ingredients:</p>
+		<p class="ingredient-list" id="ingredient-list"></p>
+		<p class="h3">Instructions:</p>
+		<p class="instructions" id="instructions"></p>
+			</div>
+		</div>
+	</div>
+	<script src="../js/postPage.js"></script>
+</body>
+</html>

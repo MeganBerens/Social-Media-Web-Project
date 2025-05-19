@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="../css/settingsPage.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <script src="https://kit.fontawesome.com/be159e1c51.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+		<div class="navbar-container">
+    		<a href="./homePage.html" id="navbar-logo"><i class="fa-solid fa-carrot"></i>KITCHEN TOPICS</a>
+    		<div class="navbar-toggle" id="mobile-menu">
+        		<span class="bar"></span>
+        		<span class="bar"></span>
+        		<span class="bar"></span>
+    		</div>
+    		<ul class="navbar-menu">
+    			<li class="navbar-item">
+	            	<a href="./tipsPage.html" class="navbar-links">Tips</a>
+	        	</li>
+    			<li class="navbar-item">
+            		<a href="./searchPage.html" class="navbar-links">Search</a>
+        		</li>
+        		<li class="navbar-item">
+            		<a href="./discoverPage.html" class="navbar-links">Discover</a>
+        		</li>
+        		<li class="navbar-item">
+            		<a href="./homePage.html" class="navbar-links">Home</a>
+        		</li>
+        		<li class="navbar-item">
+            		<a href="./createPost.html" class="navbar-links">Post</a>
+        		</li>
+        		<li class="navbar-item">
+            		<a href="./profilePage.html" class="navbar-links">Profile</a>
+        		</li>
+        		<li class="navbar-btn">
+            		<a href="../AccountServlet?source=logout" class="button">Logout</a> 
+        		</li>
+    		</ul>
+		</div>
+	</nav>
+	
+	<section>
+	    <div class="main">
+	        <div class="main-container">
+	            <div class="main-content">
+	                <h1>Update Your Settings</h1>
+	                <form id="settingsForm" action="../AccountServlet?formType=updateSettings" method="POST" enctype="multipart/form-data">
+	                    
+	                    <div class="form-group">
+	                        <label for="password" id="current-password-text">Current Password: </label>
+	                        <input type="text" id="password" name="password" placeholder="Update your Password">
+	                    </div>
+	                    <div class="form-group">
+	                        <label for="bio" id="current-bio-text">Current Bio: </label>
+	                        <textarea id="bio" name="bio" placeholder="Update your bio" rows="4"></textarea>
+	                    </div>
+	                    <div class="form-group">
+	                        <label for="profile-image">Current Profile Picture: </label>
+	                        <img src="" alt="pic" id="current-profile-pic" class="profile-pic">
+	                        <input type="file" id="profile-image" name="imagePath" accept="image/*">
+	                    </div>
+	                    	                    
+	                    <button class="submit-btn" type="submit">Save Changes</button>
+	                    
+	                    <button class="delete-btn" type="button">Delete Account</button>
+	                </form>
+	            </div>
+	        </div>
+	    </div>
+	    
+	    <script src="../js/settingsPage.js"></script>
+	</section>    
+</body>
+</html>

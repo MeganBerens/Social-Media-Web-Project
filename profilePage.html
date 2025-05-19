@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/profilePage.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/be159e1c51.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+			<div class="navbar-container">
+	    		<a href="./homePage.html" id="navbar-logo"><i class="fa-solid fa-carrot"></i>KITCHEN TOPICS</a>
+	    		<div class="navbar-toggle" id="mobile-menu">
+	        		<span class="bar"></span>
+	        		<span class="bar"></span>
+	        		<span class="bar"></span>
+	    		</div>
+	    		<ul class="navbar-menu">
+	    			<li class="navbar-item">
+	            		<a href="./tipsPage.html" class="navbar-links">Tips</a>
+	        		</li>
+	    			<li class="navbar-item">
+	            		<a href="./searchPage.html" class="navbar-links">Search</a>
+	        		</li>
+	        		<li class="navbar-item">
+	            		<a href="./discoverPage.html" class="navbar-links">Discover</a>
+	        		</li>
+	        		<li class="navbar-item">
+	            		<a href="./homePage.html" class="navbar-links">Home</a>
+	        		</li>
+	        		<li class="navbar-item">
+	            		<a href="./createPost.html" class="navbar-links">Post</a>
+	        		</li>
+	        		<li class="navbar-item">
+	            		<a href="./profilePage.html" class="navbar-links">Profile</a>
+	        		</li>
+	        		<li class="navbar-item">
+                		<a href="./settingsPage.html" id="navbar-settings" class="navbar-links"><i class="fa-solid fa-gear"></i></a>
+            		</li>
+	        		<li class="navbar-btn">
+	            		<a href="../AccountServlet?source=logout" class="button">Logout</a>
+	        		</li>
+	    		</ul>
+			</div>
+	</nav>
+    <div class="main">
+    	<div class="main-container"><!-- profile-container -->
+    		<div class="main-content"><!-- profile-header -->
+	                <div class="main-content-profile-img">
+	                    <img src="" alt="pic" id="profile-pic" class="profile-pic">
+	                    <div id="profile-home-username" class="profile-home-username"></div>
+	                </div>
+	                <div class="home-post-stats">
+	                    <button class="icon-btn" id="number-posts-btn">
+	                        <i class="fa-solid fa-clone"></i>
+	                        <span class="posts-count" id="posts-count">0</span>
+	                    </button>
+	                    <button class="icon-btn" id="followers-btn">
+	                        <i class="fa-solid fa-user"></i>
+	                        <span class="followers-count" id="followers-count">0</span>
+	                    </button>
+	                    <button class="icon-btn" id="following-btn">
+	                        <i class="fa-solid fa-users"></i>
+	                        <span class="following-count" id="following-count">0</span>
+	                    </button>
+	                </div>
+	                <span class="profile-bio" id="profile-bio">This is a little about me.</span>
+    		</div>	
+    	</div>
+    </div>
+    <div class="main-img" id="main-img">
+		<div class="main-img-container" id="main-img-container">
+          <!-- js fills this in -->
+        </div>
+    </div>
+    
+    <script src="../js/profilePage.js"></script>
+        
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!---views/createAccount.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/createAccount.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="../js/createAccount.js"></script> 
+</head>
+<body>
+			
+    <div class="page-container" id="account-form"> 
+        <header>
+            <h1>Create an Account</h1> 
+        </header>
+        <main>
+            <form id="accountForm" method="POST" action="../AccountServlet?source=temp"> 
+                <!-- required fields-->
+                
+                <!-- hidden attribute so servlet knows what form is being submitted
+                	it helps with differentiating between signIn / createAccount etc -->
+                <input type="hidden" name="formType" id="formType" value="createAccount">
+
+
+				<div id="error-message" style="color: red; font-weight: bold;"></div>
+
+                <label for="accountUsername">Username:</label>
+                <input type="text" name="accountUsername" id="accountUsername" required>
+
+                <label for="firstName">First Name:</label> 
+                <input id="firstName" type="text" name="firstName" required> 
+
+                <label for="lastName">Last Name:</label> 
+                <input id="lastName" type="text" name="lastName" required> 
+                
+                <label for="email">Email:</label> 
+                <input id="email" type="email" name="email" required> 
+
+                <label for="dob">Date of Birth:</label> 
+                <input id="dob" type="date" name="dob" required> 
+
+                <label for="password">Password:</label> 
+                <input id="password" type="password" name="password" required> 
+                <div id="password-strength"></div> 
+
+                <label for="confirmPassword">Confirm Password:</label> 
+                <input id="confirmPassword" type="password" required> 
+                
+
+                <button type="submit">Submit</button> 
+                
+  
+            </form> 
+            <!--prompting user to go to signIn if they have an account already-->
+            <p>Already have an account? Click here to sign in</p>
+                <a href="./signIn.html" class="signIn-btn"><button>Sign In</button></a>
+        </main>
+    </div> 
+    
+</body>
+</html>

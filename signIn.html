@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../css/createAccount.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="../js/signIn.js"></script> 
+    <script src="https://kit.fontawesome.com/be159e1c51.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="page-container"> 
+        <header>
+            <h1>Sign In</h1> 
+        </header>
+        <main>
+            <form id="signInForm" action="../AccountServlet?source=temp" method="POST" > 
+                
+                <input type="hidden" name="formType" id="formType" value="signIn">
+                
+                <div id="error-message" style="color: red; font-weight: bold;"></div>
+                
+                <!--user should type in password and username to login-->
+                <label for="accountUsername">Username:</label>
+                <input id="accountUsername" type="text" name="accountUsername" required>
+                
+                <!--<label for="email">Email:</label>  label for email input 
+                <input id="email" type="email" name="email" required>  input field for email, type is email to validate format automatically 
+                  user maybe in the future could use their email to login? Email or username, both should technically be unique in the db  -->
+
+                <label for="password">Password:</label> 
+                <input id="password" type="password" name="password" required> 
+                <div id="password-strength"></div> 
+
+                <button type="submit">Submit</button> 
+
+                
+
+            </form> 
+            <!--prompting user-->
+            <p>Don't have an account? Click here to make one</p>
+            <a href="./createAccount.html" class="createAccount-btn"><button>Create Account</button></a>
+        </main>
+    </div> 
+</body>
+</html>

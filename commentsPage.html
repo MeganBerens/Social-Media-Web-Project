@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/commentsPage.css">
+    <script src="https://kit.fontawesome.com/be159e1c51.js" crossorigin="anonymous"></script>
+    
+    <!-- <link rel="stylesheet" href="../css/tipsPage.css">  -->
+
+</head>
+
+<body>
+
+	<nav class="navbar">
+		<div class="navbar-container">
+    		<a href="./homePage.html" id="navbar-logo"><i class="fa-solid fa-carrot"></i>KITCHEN TOPICS</a>
+    		<div class="navbar-toggle" id="mobile-menu">
+        		<span class="bar"></span>
+        		<span class="bar"></span>
+        		<span class="bar"></span>
+    		</div>
+    		<ul class="navbar-menu">
+    			<li class="navbar-item">
+	            	<a href="./tipsPage.html" class="navbar-links">Tips</a>
+	        	</li>
+    			<li class="navbar-item">
+            		<a href="./searchPage.html" class="navbar-links">Search</a>
+        		</li>
+        		<li class="navbar-item">
+            		<a href="./discoverPage.html" class="navbar-links">Discover</a>
+        		</li>
+        		<li class="navbar-item">
+            		<a href="./homePage.html" class="navbar-links">Home</a>
+        		</li>
+        		<li class="navbar-item">
+            		<a href="./createPost.html" class="navbar-links">Post</a>
+        		</li>
+        		<li class="navbar-item">
+            		<a href="./profilePage.html" class="navbar-links">Profile</a>
+        		</li>
+        		<li class="navbar-btn">
+            		<a href="../AccountServlet?source=logout" class="button">Logout</a> 
+        		</li>
+    		</ul>
+		</div>
+	</nav>
+
+
+
+
+    <div class="entire-body">
+
+        <div class="post-container" id="post-container"></div>
+		
+		
+		
+		<div class="comments-container">
+		
+			<p class="header">Comments:</p>
+	    	<div class="comments" id="comments"></div>
+		
+			<form id="commentForm" action="../CommentsServlet" method="POST">
+				<div class="comment-input-container">
+					<input type="hidden" name="postId" id="postId" />
+					<input class="comment-input" id="comment-input" name="comment-input" type="text" placeholder="Write a comment..." />
+					<button class="post-comment-btn"id="post-comment-btn">Post Comment</button>
+				</div>
+			</form>
+			
+		</div>
+		
+		
+		<script src="../js/commentsPage.js"></script>
+       
+             	
+	</div>
+</body>
+</html>
