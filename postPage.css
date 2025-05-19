@@ -1,0 +1,315 @@
+.main{
+background-color: rgba(132, 224, 155, 0.267);
+padding: 50px 50px 50px 50px;
+}
+.main-container{
+/*background-color: #decbb3;*/
+/*display: grid;*/
+/*align-items: center;
+justify-self: center;
+/*grid-template-columns: 1fr 1fr;*/
+margin: 0 auto;
+width: 100%;
+max-width: 1300px;
+height: 10vh;
+padding: 0;
+z-index: 1;
+}
+.main-content{
+background-color: #f9f7e8;
+border-radius: 5px;
+}
+.main-content h1{
+/*background-color: #decbb3;*/
+color: #333333;
+word-spacing: 6px;
+line-height: 1.6;
+letter-spacing: 2px;
+font-size: 2rem;
+height: 10vh;
+padding: 30px 20px 0px 40px;
+margin: 0;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+@media screen and (max-width: 786px){
+.main-container{
+display: grid;
+grid-template-columns: auto;
+align-items: center;
+justify-self: center;
+width: 100%;
+margin: 0 auto;
+height: 90vh;
+}
+
+.main-content{
+text-align: center;
+margin-bottom: 4rem;
+}
+
+.main-content h1{
+font-size: 2.5rem;
+margin-bottom: 2rem;
+}
+
+.main-content h2{
+font-size: 3rem;
+}
+
+.main-content p{
+margin-top: 1rem;
+font-size: 1.5rem;
+}
+}
+
+@media screen and (max-width: 480px){
+.main-content h1{
+font-size: 2rem;
+margin-top: 3rem;
+}
+
+.main-content h2{
+font-size: 2rem;
+}
+
+.main-content p{
+margin-top: 2rem;
+font-size: 1.5rem;
+}
+
+.main-btn{
+padding: 12px 36px;
+margin: 2.5rem 0;
+}
+}
+
+/*the posts that show up in the feed for homePage and discoverPage*/
+.main-img{
+background-color: rgba(132, 224, 155, 0.267);
+display: flex;
+flex-direction: column;
+align-items: center;
+/*min-height: 1500vh;*/
+height: auto;
+padding-bottom: 100px;
+padding-top: 100px;
+}
+
+
+
+.main-profile-img-link {
+text-decoration: none;
+}
+
+.main-img-container{
+
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 1rem;
+}
+
+.main-img-card{
+justify-content: center;
+opacity: 0;
+transform: translateY(40px);
+transition: all 0.3s ease-out;
+width: 800px;
+margin: 10px auto;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+text-align: center;
+background-color: #ffff;;
+}
+
+.main-img-card.reveal {
+opacity: 1;
+transform: translateY(0);
+}
+
+
+/*container that holds profile image and the username*/
+.main-profile-img{
+align-items: center;
+padding-left: 25px;
+text-decoration: none;
+gap: 0 0.75rem;
+display: flex;
+height: 80px;
+padding: 20px 20px 20px 20px;
+}
+
+#home-username{
+align-items: center;
+/*justify-content: center;*/
+display: flex;
+text-decoration: none;
+/*height: 100%;*/
+gap: 1rem;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+word-spacing: 3px;
+line-height: 1.6;
+letter-spacing: 1px;
+font-size: 2rem;
+color: #333333;
+}
+
+
+/*the image next to users username on post in feed*/
+/*looks fine, dont touch*/
+#home-user-img{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+object-fit: cover;
+display: block;
+cursor: pointer;
+}
+
+
+/*profile image on the card is also included in this*/
+.main-img-card img{
+/*width: 100%;
+height: auto;
+display: block;*/
+
+}
+
+/*the actual image on the post*/
+.home-img{
+	display: block;
+    height: 500px;
+    width: auto;
+	margin: 10px auto;
+	cursor: pointer;
+}
+
+
+
+/*icons below the image*/
+.home-post-actions{
+height: 30px;
+padding: 10px;
+font-size: 3rem;
+text-decoration: none;
+border: none;
+display: flex;
+align-items: center;
+
+}
+
+.icon-btn{
+font-size: 1.5rem;
+margin: 10px;
+text-decoration: none;
+border: none;
+background-color: #fff;
+cursor: pointer;
+color: #333333;
+}
+
+
+.main-img-card h2{
+color: #333333;
+word-spacing: 6px;
+line-height: 1.6;
+letter-spacing: 2px;
+}
+
+.main-img-card p{
+
+}
+
+.recipe-name{
+gap: 1rem;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+word-spacing: 3px;
+line-height: 1.6;
+letter-spacing: 1px;
+font-size: 2.5rem;
+color: #333333;
+}
+
+.description{
+gap: 1rem;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+word-spacing: 3px;
+line-height: 1.6;
+letter-spacing: 1px;
+font-size: 1.5rem;
+color: #333333;
+}
+
+.ingredient-list{
+gap: 1rem;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+word-spacing: 3px;
+line-height: 1.6;
+letter-spacing: 1px;
+font-size: 1.5rem;
+color: #333333;
+}
+
+.instructions{
+gap: 1rem;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+word-spacing: 3px;
+line-height: 1.6;
+letter-spacing: 1px;
+font-size: 1.5rem;
+color: #333333;
+}
+
+
+@media screen and (max-width: 960px){
+.main-img{
+flex-direction: column;
+height: auto;
+padding-bottom: 50px;
+}
+.main-img-card h2{
+font-size: 2rem;
+margin-top: 1rem;
+flex: 1 1 45%;
+}
+}
+
+@media screen and (max-width: 480px){
+.main-img{
+flex-direction: column;
+align-items: center;
+/* width: 100%;
+height: 700vh;
+*/
+}
+.main-img-container{
+width: 100%;
+padding: 0 1rem;
+}
+.main-img-card h2{
+font-size: 1.2rem;
+}
+.main-img-card{
+width: 100%;
+height: auto;
+margin: 0 0 1rem 0;
+}
+}
+
+.liked-post {
+	color: #BC5959;
+}
+
+.h3 {
+	color: #C99777;
+	font-size: 2.5rem;
+	gap: 1rem;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	word-spacing: 3px;
+	line-height: 1.6;
+	letter-spacing: 1px;
+	font-weight: bold;
+}

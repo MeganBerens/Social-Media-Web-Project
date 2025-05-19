@@ -1,0 +1,331 @@
+/*navbar and footer will be on all pages and require same mobile treatment, instead of putting css on every css page just include this file at the top before the other css file*/
+
+*{
+    box-sizing: border box;
+    margin: 0;
+    padding: 0;
+    /*height: 300vh;*/
+    
+}
+
+.navbar{
+    background-color: #f9f7e8;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+}
+/* navbar section*/
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px; 
+    margin: 0 auto;
+    padding: 0 50px;
+    
+}
+
+/*(ICON) KITCHEN TOPICS*/
+#navbar-logo{
+    background-color: #c3a78f; 
+	background-image: linear-gradient(to top, #dcb8a5 30%, #c99777 100%);
+    background-size: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    font-size: 2.5rem; 
+    font-weight: 600;
+    /*padding-left: 15px;
+}
+
+.fa-carrot{
+    margin-right: 0.5rem;/*space between (ICON) KITCHEN TOPICS*/
+}
+
+#navbar-logo:hover{
+	color: #a35345;
+}
+/*container to hold our links to different pages*/
+.navbar-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    
+}
+/*holds nav links*/
+.navbar-item{
+    height: 80px;
+}
+/*Home, Profile, Post, Discover*/
+.navbar-links{
+    color: #a35345;
+    display: flex;
+    /*make bold*/
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    
+}
+
+/*Logout, sign In, create Account*/
+.navbar-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+    
+}
+/*Logout*/
+.button{
+    background-color: #c99777;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    
+}
+/*Sign In Button only on index.html*/
+.signIn-btn{
+    background:  #ead9c6;
+    color:  #333333;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    
+}
+/*create account button only on index.html*/
+.createAccount-btn{
+    background:  #ead9c6;
+    color:  #333333;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*display: flex;*/
+    display: inline-block;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    
+}
+
+.button:hover{
+    background-color: rgba(132, 224, 155, 0.267);
+    color: #a35345;
+    transition: all 0.3s ease;
+}
+.signIn-btn:hover{
+    background-color: rgba(132, 224, 155, 0.267);
+    color: #a35345;
+    transition: all 0.3s ease;
+}
+.createAccount-btn:hover{
+    background-color: rgba(132, 224, 155, 0.267);
+    color: #a35345;
+    transition: all 0.3s ease;
+}
+.navbar-links:hover{
+    color: #f8ba7d;
+    transition: all 0.3s ease;
+}
+
+/*dealing with smaller screens*/
+@media screen and (max-width: 960px){
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    /*hamburger icon and drop down menu*/
+    .navbar-menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -100%;
+        opacity: 0;
+        transition: all 0.1s ease;
+        height: 50vh;
+        pointer-events: none;
+    }
+    
+    /*to trigger menu coming down to the screen*/
+    .navbar-menu.active{
+        top: 100%;
+        opacity: 1;
+        transition: all 0.3s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+        background: #f9f7e8;
+        /*background-color: #fff5ba;*/
+        /*background-image: linear-gradient(to top, #faa8bb 30%, #fda488 100%);*/
+        background-size: 100%;
+        pointer-events: auto;
+    }
+
+    #navbar-logo{
+        padding-left: 25px;
+        z-index: 100;
+    }
+
+    .navbar-toggle{
+        position: relative;
+        z-index: 101;
+    }
+
+    /*the span bars*/
+    .navbar-toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: #fff5ba;
+        background-image: linear-gradient(to top, #dcb8a5 30%, #c99777 100%);
+        background-size: 100%;
+    }
+
+    .navbar-item{
+        width: 100%;
+    }
+
+    .navbar-links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        background: #f9f7e8;
+        height: 20vh;
+    }
+
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+        
+    }
+
+    .navbar-btn{
+        padding-bottom: 2rem;
+    }
+    
+
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50px;
+        margin: 0;
+    }
+    .signIn-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50px;
+        margin: 0;
+    }
+    .createAccount-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50px;
+        margin: 0;
+    }
+
+    .navbar-toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+
+/*footer*/
+
+@media screen and (max-width: 820px){
+    .footer-links{
+        padding-top: 2rem;
+    }
+
+    #footer-logo{
+        margin-bottom: 2rem;
+    }
+
+    .website-rights{
+        margin-bottom: 2rem;
+    }
+
+    .footer-link--wrapper{
+        flex-direction: column;
+    }
+
+    .social-media--wrap{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .footer-link--items{
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
