@@ -91,9 +91,8 @@ The following files and features were developed by me (**Megan Berens**):
 <img width="937" alt="Screenshot 2025-05-19 155935" src="https://github.com/user-attachments/assets/1b23d50e-df24-48ba-91dd-0a408c101c19" />
 <img width="365" alt="Screenshot 2025-05-19 160201" src="https://github.com/user-attachments/assets/27948fef-9e29-4669-bc98-a29dddabe9e1" />
 <img width="943" alt="Screenshot 2025-05-19 160250" src="https://github.com/user-attachments/assets/81b0cd46-9a65-487e-a201-64cc28bbee99" />
-<img width="943" alt="Screenshot 2025-05-19 160250" src="https://github.com/user-attachments/assets/4a48832e-48b1-419f-92aa-c37c71231880" />
-<img width="943" alt="Screenshot 2025-05-19 160250" src="https://github.com/user-attachments/assets/72b5e6f7-3f19-47ae-a96a-d978932e2090" />
-<img width="941" alt="Screenshot 2025-05-19 160538" src="https://github.com/user-attachments/assets/1fecdce3-a9b0-49d3-9817-2f6d7fc3ca59" />
+<img width="942" alt="Screenshot 2025-05-19 160323" src="https://github.com/user-attachments/assets/0d6fb585-b104-4e5e-904a-2aee0ae596e2" />
+<img width="419" alt="Screenshot 2025-05-19 160408" src="https://github.com/user-attachments/assets/0f320421-7253-4296-a257-24358ee5098b" />
 <img width="941" alt="Screenshot 2025-05-19 160612" src="https://github.com/user-attachments/assets/0085d16e-92f7-48b5-b171-525e4d607d83" />
 <img width="940" alt="Screenshot 2025-05-19 160646" src="https://github.com/user-attachments/assets/7e52a056-acb1-4506-8a41-94e035b8c729" />
 <img width="733" alt="Screenshot 2025-05-19 160734" src="https://github.com/user-attachments/assets/9ee9035b-667e-49a0-8401-e110859c5355" />
